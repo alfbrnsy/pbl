@@ -3,9 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 
 class AlumniSurvey extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'student_nim',
         'profession_id',
@@ -19,7 +23,6 @@ class AlumniSurvey extends Model
         'first_agency_work_date',
         'supervisor_name',
         'supervisor_position',
-        'supervisor_phone',
         'supervisor_email',
     ];
 
